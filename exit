@@ -1,4 +1,12 @@
-[33mcommit fd61ed56d026e22c4d8698c62b051ec298280229[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/Curso_Git_GitHub_#1234[m[33m, [m[1;31morigin/feature/Curso_Git_GitHub_#1234[m[33m)[m
+[33mcommit d13a3549cdb309ad213e69ffd006500d8e20bf07[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/Curso_Git_GitHub_#1234[m[33m)[m
+Author: Jonatha Leite Santos <jonatha.eti@gmail.com>
+Date:   Fri Apr 25 14:22:01 2025 -0300
+
+    Revert "Commit Teste"
+    
+    This reverts commit fd61ed56d026e22c4d8698c62b051ec298280229.
+
+[33mcommit fd61ed56d026e22c4d8698c62b051ec298280229[m[33m ([m[1;31morigin/feature/Curso_Git_GitHub_#1234[m[33m)[m
 Author: Jonatha Leite Santos <jonatha.eti@gmail.com>
 Date:   Fri Apr 25 14:17:12 2025 -0300
 
