@@ -93,3 +93,9 @@ Outro detalhe interessante é que esse parâmetro -a é opcional, porque se pass
 
 Conclusão
 Com isso, aprendemos que git tag nome_da_tag -m já cria uma tag com mensagem, ou seja, uma annotated tag. Voltando ao GitHub, na parte superior esquerda da lista de tags, temos as abas "Release" e "Tags". A aba Releases (lançamentos) pode trazer algumas informações a mais, então, no próximo vídeo, conheceremos mais sobre essa aba e criaremos um release (lançamento) do nosso projeto.
+
+Conhecemos o conceito de tags do git e vimos que elas são uma espécie de ponteiro para um commit específico, sendo comumente utilizadas para criação de versões;
+
+Aprendemos que tags anotadas ou annotated tags são tags com alguma informação a mais, como uma mensagem. Annotated tags carregam consigo seu autor e data de criação e isso pode ser visto com o comando git tag -v;
+
+Vimos como gerar uma release no GitHub, inclusive adicionando arquivos que possam ser binários compilados de nossos projetos.
