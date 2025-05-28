@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
 
 :root {
 	--cor-primaria: #000000;
@@ -17,6 +18,7 @@
 
 	--fonte-primaria: 'Krona One', sans-serif;
 	--fonte-secundaria: 'Montserrat', sans-serif;
+	--fonte-terciaria: 'Tagesschrift', system-ui;
 }
 
 /* isso  vai pegar todos elementos do html */
@@ -40,9 +42,10 @@ body {
 	gap: 80px;
 }
 .cabecalho__menu__link {
-	font-family: var(--fonte-secundaria);
+	font-family: var(--fonte-terciaria);
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 30px;
+	font-style: normal;
 	color: var(--cor-terciaria);
 	text-decoration: none;
 }
@@ -90,12 +93,19 @@ body {
 	gap: 32px;
 }
 
+.apresentacao__links__grupo {
+	display: flex;
+	gap: 16px;
+}
+
 .apresentacao__links__link {
 	display: flex;
+	/* flex-direction: row; */
+
 	justify-content: center;
 	gap: 16px;
 	border: 2px solid var(--cor-terciaria);
-	width: 378px;
+	width: 280px;
 	padding: 21.5px 0;
 	font-weight: 600;
 	text-align: center;
@@ -104,7 +114,7 @@ body {
 	text-decoration: none;
 	font-size: 24px;
 	font-family: var(--fonte-secundaria);
-	/* background-color: #22D4FD; */
+	background-color: #22d4fd;
 }
 
 .apresentacao__links__link:hover {

@@ -77,6 +77,17 @@ body {
 	color: white;
 }
 
+.flex-container {
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	/* os flex items vão quebrar em múltiplas linhas, de cima para baixo */
+	flex-wrap: wrap;
+
+	flex-flow: column wrap;
+	font-size: xx-large;
+}
+
 @media all and (min-width: 600px) {
 	.aside {
 		flex: 1 0 0;

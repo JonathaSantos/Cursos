@@ -6,3 +6,34 @@ https://color.adobe.com/pt/create/color-wheel
 
 
 https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax
+
+https://developers.google.com/fonts/docs/getting_started?hl=pt-br
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/div
+
+https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css
+
+https://css-tricks.com/almanac/properties/g/gap/
+
+https://css-tricks.com/
+
+https://css-tricks.com/revisiting-image-maps/
+
+https://www.alura.com.br/artigos/css-guia-do-flexbox
+
+https://www.alura.com.br/artigos/css-seletores-avancados-aplicacoes-web
+
+https://www.alura.com.br/artigos/comecando-a-organizar-seu-css
+
+
+https://getbem.com/
+
+https://www.alura.com.br/artigos/criando-componentes-css-com-padrao-bem
+
+https://www.alura.com.br/artigos/entendendo-como-funciona-box-model-e-o-box-sizing
+https://www.alura.com.br/artigos/css
+https://www.alura.com.br/artigos/o-que-e-reset-css
+https://www.alura.com.br/artigos/organizando-o-css-no-seu-projeto
+https://www.alura.com.br/artigos/guia-de-unidades-no-css
+https://cursos.alura.com.br/forum/topico-duvida-viewport-271522
+https://cursos.alura.com.br/forum/topico-qual-a-funcao-do-box-sizing-border-box-34779
