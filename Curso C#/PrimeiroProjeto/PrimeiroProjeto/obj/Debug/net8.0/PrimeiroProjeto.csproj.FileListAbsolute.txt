@@ -1,0 +1,15 @@
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.exe
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.deps.json
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.runtimeconfig.json
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.dll
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.pdb
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.AssemblyInfoInputs.cache
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.AssemblyInfo.cs
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.sourcelink.json
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.dll
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\refint\PrimeiroProjeto.dll
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.pdb
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.genruntimeconfig.cache
+C:\Desenvolvimento\com versionamento\Cursos\Cursos\Curso C#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\ref\PrimeiroProjeto.dll

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	--cor-primaria: #000000;
+	--cor-secundaria: #f2f2f2;
+	--cor-texto: #ffffff;
+	--cor-texto-branco: #f6f6f6;
+	--cor-texto-primaria: #22d4fd;
+	--cor-terciaria: #22d4fd;
+	--cor-botao: #22d4fd;
+	--fonte-principal: 'Tahoma', sans-serif;
+	--tamanho-fonte-base: 16px;
+
+	--espacamento-padrao: 1rem;
+	--borda-arredondada: 8px;
+
+	--fonte-primaria: 'Krona One', sans-serif;
+	--fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+	padding: 2em;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wrapper > * {
+	padding: 10px;
+	flex: 1 100%;
+}
+
+.header {
+	background: tomato;
+}
+
+.footer {
+	background: lightgreen;
+}
+
+.main {
+	text-align: left;
+	background: deepskyblue;
+}
+
+.aside-1 {
+	background: gold;
+}
+
+.aside-2 {
+	background: hotpink;
+}
+
+.navigation a:hover {
+	background: #1565c0;
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+
+	list-style: none;
+	margin: 0;
+	background: deepskyblue;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: white;
+}
+
+.flex-container {
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	/* os flex items vão quebrar em múltiplas linhas, de cima para baixo */
+	flex-wrap: wrap;
+
+	flex-flow: column wrap;
+	font-size: xx-large;
+}
+
+@media all and (min-width: 600px) {
+	.aside {
+		flex: 1 0 0;
+	}
+	.navigation {
+		flex-flow: column wrap;
+		padding: 0;
+	}
+	.navigation a {
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.navigation li:last-of-type a {
+		border-bottom: none;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.main {
+		flex: 3 0px;
+	}
+	.aside-1 {
+		order: 1;
+	}
+	.main {
+		order: 2;
+	}
+	.aside-2 {
+		order: 3;
+	}
+	.footer {
+		order: 4;
+	}
+
+	.navigation {
+		justify-content: space-around;
+	}
+}

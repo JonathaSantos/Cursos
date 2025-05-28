@@ -1,0 +1,25 @@
+Chegou a hora de colocar as mãos na massa. Desafiamos você a escolher cores para o seu projeto, pois uma paleta é essencial para providenciar uma boa experiência de usuário e enriquecer a identidade de sua página. E para te ajudar com esse desafio, separamos alguns sites.
+
+Coolors
+O Coolors possui uma interface bem clara. Com a barra de espaço do seu teclado, você consegue criar várias combinações, e uma das funções mais legais é a opção travar, que você pode usar se gostar de apenas uma cor, e assim que você clica nela, consegue continuar elaborando outras combinações levando em conta a cor que você escolheu.
+
+Tela do seletor de paleta de cores do site Coolors
+
+Adobe Color
+O Adobe color apresenta um Color Wheel (roda de cores) que pode ser ajustado de maneiras variadas para obter uma harmonia de cores, e você pode aplicar diversas regras de harmonia de cores, como o modo análogo, monocromático, tríade, complementar, quadrado, composto, entre outros.
+
+Tela da roda de cores do site Adobe Color, onde as paletas de cores se modificam ao selecionar opções como “monocromático” e “complementar”
+
+Color Hunt
+O Color Hunt dispõe de diversas paletas elaboradas. Você consegue encontrar a combinação que mais te agrada e consegue buscar por palavras-chave como pastel, vintage, neon e assim por diante. E caso não encontre nenhuma que te agrade, você consegue criar a sua própria paleta clicando nos três pontinhos do canto superior direito da página.
+
+Rolagem da tela com várias opções de paletas de cores do site Color Hunt
+
+Color Tool - Material Design
+O Color Tool é ótimo para criar, compartilhar e aplicar paletas de cores à interface do usuário, bem como é possível medir o nível de acessibilidade de qualquer combinação de cores na aba accessibility.
+
+Tela do seletor de paleta de cores do site Color Tool - Material Design, no qual é possível simular a interface de um aplicativo e modificar a paleta de cores
+
+São opções incríveis, não é? Se você conhece algum outro site nesse estilo pode indicar no fórum ou no Discord da Alura para que outras pessoas estudantes também conheçam.
+
+Agora é com você! Encontre a paleta de cores que mais te agrada e aplique no projeto para deixá-lo com a sua carinha :D
