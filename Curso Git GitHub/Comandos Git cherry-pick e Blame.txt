@@ -1,0 +1,178 @@
+Simulando o cenário
+Vamos simular esse cenário. Já temos a branch main e nova-funcionalidade.
+
+Agora, vamos criar uma branch chamada funcionalidade1, usando o comando git switch -c.
+
+git switch -c funcionalidade1
+Copiar código
+Depois, vamos voltar para main e criar uma nova branch chamada funcionalidade2.
+
+git switch main
+git switch -c funcionalidade2
+Copiar código
+Na branch funcionalidade2, vamos quebrar a linha do título Jogo JS na tag <title> e adicionar esse commit.
+
+index.html:
+
+<title>
+    JS Game
+</title>
+Copiar código
+Vamos usar o git add em index.html e depois dar um git commit com a mensagem "Quebrando linha no título".
+
+git add index.html
+git commit -m "Quebrando linha no titulo"
+Copiar código
+Vamos adicionar alguma outra informação, como quebrar a linha no <h1> também:
+
+index.html:
+
+<h1>
+    Descubra o <span class="container__texto-azul">numero secreto</span>
+</h1>
+Copiar código
+Agora, vamos fazer outro commit.
+
+git add index.html
+git commit -m "Quebrando linha no H1"
+Copiar código
+Nós fizemos isso rapidamente, pois não é nada novo. Apenas alteramos dois detalhes no index.html e fizemos dois commits na branch funcionalidade2.
+
+Pegando um commit
+Agora, vamos para a branch funcionalidade1.
+
+git switch funcionalidade1
+Copiar código
+Queremos adicionar a quebra de linha no nosso parágrafo, mas também precisamos da quebra de linha no nosso título.
+
+Como podemos pegar um commit de outro branch e aplicar, sem precisar copiar o código?
+
+Dica: ao fazer git log com o nome de uma branch, ele vai mostrar o log daquela branch, e não do branch atual.
+
+Vamos fazer um git log de funcionalidade2:
+
+git log funcionalidade2
+Copiar código
+Podemos copiar o hash do commit "Quebrando linha no título".
+
+commit 92a316337bdd6619dc2070fe185759dc864f2801 (funcionalidade2)
+Author: Vinicius Dias <carlosv775@gmail.com>
+Date: Sat Dec 23 15:28:08 2023 -0300
+Quebrando linha no H1
+
+commit 609bc79b23305a1db648811ec72ec067e1806df
+Author: Vinicius Dias <carlosv775@gmail.com>
+Date: Sat Dec 23 15:27:54 2023 -0300
+Quebrando linha no titulo
+Copiar código
+Podemos apertar "Q" para sair do log.
+
+Quando chamamos git branch, nos certificamos que estamos na funcionalidade1. Queremos pegar aquele commit que está na funcionalidade2 e aplicar no branch atual.
+
+Então, queremos buscar um commit, e o nome disso é cherry-pick. Vamos executar o git cherry-pick com o hash daquele commit.
+
+git cherry-pick 609bc79b23305a1db648811ec72ec067e1806df
+Copiar código
+O que isso vai fazer? Vai pegar o commit com esse hash e aplicar no branch atual.
+
+Com isso, ele pegou aquele commit com a mensagem "Quebrando linha no título". Podemos conferir que a modificação já foi aplicada ao index.html, pois o título está em uma nova linha.
+
+Se fazemos o git log, temos exatamente aquele commit "Quebrando linha no título", depois do "Removendo quebra de linha". Isso significa que aplicamos aquele commit a esse branch.
+
+git log
+Copiar código
+Com isso, temos um novo commit sendo aplicado na branch.
+
+commit 609bc79b23305a1db648811ec72ec067e1806df (HEAD -> funcionalidade1)
+Author: Vinicius Dias <carlosv775@gmail.com>
+Date: Sat Dec 23 15:27:54 2023 -0300
+Quebrando linha no titulo
+
+commit 502afb6235b2634a60fefece0a6b73431bf7d4703 (tag: v0.l.l, tag: teste, origin/main, origin/HEAD, main)
+Author: Vinicius Dias <car10sv775@gmai1.com>
+Date: Sat Dec 23 15:12:41 -0300
+Removendo quebra de linha 
+Copiar código
+O cherry-pick serve exatamente para esses cenários, quando duas funcionalidades precisam da mesma alteração. Então pegamos um commit específico para o branch atual.
+
+Com isso, conseguimos fazer push dos nossos branches funcionalidade1 e funcionalidade2, e esses dois branches vão ter os seus respectivos commits.
+
+git push origin funcionalidade1 funcionalidade2
+Copiar código
+Dessa forma, conseguimos selecionar um commit específico e aplicá-lo no nosso branch atual de forma bastante simples com o cherry-pick.
+
+Agora, vamos voltar para a main para fazer o merge tanto da funcionalidade2 quanto da funcionalidade1
+
+git switch main
+git merge funcionalidade2
+git merge funcionalidade1
+Copiar código
+Com isso, temos todas as funcionalidades na nossa main e podemos enviar as alterações:
+
+git push origin main
+
+
+Encontrando o autor
+Imagine que você é novo em uma empresa e está desenvolvendo ou corrigindo algo. Você quer entender melhor um pedaço de código, pois está com dúvidas. Então, você verifica quem foram as pessoas que trabalharam naquela função ou método para poder perguntar a elas e esclarecer suas dúvidas.
+
+No entanto, além desse bom uso da ferramenta, infelizmente, é bastante comum um mau uso da mesma para apontar culpados. Por exemplo, você encontrou um bug na aplicação e executa o comando para descobrir quem adicionou aquele bug para culpar essa pessoa. Isso é, definitivamente, um mau uso da ferramenta.
+
+Precisamos ressaltar que é um mau uso, pois o nome desse comando não ajuda muito.
+
+O nome do comando que mostra quem alterou cada uma das linhas do arquivo é git blame.
+
+O termo blame vêm do inglês e significa culpar. Portanto, git blame mostra quem é o "culpado" por cada uma das linhas do arquivo.
+
+Por exemplo, ao fazer git blame de index.html, ele exibirá aquele arquivo inteiro mostrando, em cada linha, qual é o commit responsável por aquela linha existir, qual é o último commit que modificou aquela linha.
+
+git blame index.html
+Copiar código
+Por exemplo, o commit que gerou as duas primeiras linhas do index.html foi criado por Rodrigo Ferreira, em setembro de 2023. E, logo no início, também mostra o hash do commit que gerou essa linha.
+
+^250c665 (Rodrigo Ferreira 2023-09-05 14:59:21 -0300 1) <!DOCTYPE html>
+^250c665 (Rodrigo Ferreira 2023-09-05 14:59:21 -0300 1) <html lang="pt-br">
+Copiar código
+Um detalhe interessante é que esse commit começa com um acento circunflexo. Isso indica que é o commit original, isto é, o primeiro commit desse projeto.
+
+Podemos copiar o hash do commit, sem o acento circunflexo, pressionar "Q" para sair desse git blame e fazer um git show com esse hash:
+
+git show 250c665
+Copiar código
+Assim, verificamos que esse é realmente o primeiro commit do projeto.
+
+commit 250c665bd8d36acb4e1dd4689730fdb64e2841d5
+Author: Rodrigo Ferreira <rodrigo.alura87@gmail.com>
+Date: Tue Sep 5 14:59:21 2023 -0300
+projeto inicial
+Copiar código
+Vamos limpar o terminal e voltar para o comando git blame com a seta para cima do teclado.
+
+Se analisamos a tag de <title>, descobrimos que o responsável por essas modificações foi o Vinicius e em qual data foi feito o commit.
+
+Ele também mostra qual é o commit responsável por essas três linhas, ou seja, o último commit que modificou essas três linhas.
+
+609bc79b (Vinicius Dias 2023-12-23 15:27:54 -0300 14) <title>
+609bc79b (Vinicius Dias 2023-12-23 15:27:54 -0300 14)     Jogo JS
+609bc79b (Vinicius Dias 2023-12-23 15:27:54 -0300 14) </title>
+Copiar código
+Algumas IDEs mostrarão essas informações diretamente no arquivo. Com o Visual Studio Code, seria necessário instalar alguma extensão para exibi-las.
+
+Poderíamos sugerir alguma extensão, mas elas são menos estáveis do que o próprio Visual Studio Code. Portanto, podemos mostrar uma extensão hoje que talvez não exista amanhã ou depois. Por isso, sugerimos que você procure alguma extensão de git que possa trazer essa funcionalidade.
+
+Para que você entenda como seria essa funcionalidade, abriremos outra IDE para mostrar como seria exibido o git blame.
+
+Bastaria clicar em um arquivo com o botão direito e escolher "Git > Annotate with Git Blame".
+
+Ele já mostra, ao lado de cada uma das linhas enquanto mexemos no arquivo, quem é o responsável e quando foi feita cada modificação naquela linha.
+
+Por exemplo, se queremos saber sobre o <title>, podemos clicar na informação e ele já mostra num git log quando foi feito esse commit e a mensagem de commit com os detalhes.
+
+Também conseguimos verificar que só um arquivo foi modificado nesse commit e assim em diante.
+
+Em uma IDE, conseguiríamos visualizar esse git blame de forma mais amigável. No Visual Studio Code, que é um editor de código e não é uma IDE, você pode utilizar alguma extensão.
+
+Sugerimos que você pesquise por alguma extensão possível para essa funcionalidade.
+
+
+
+
