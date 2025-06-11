@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Curso Gestão Ágil/~$Dicas.docx
+=======
 # Created by https://www.toptal.com/developers/gitignore/api/java 
 # Edit at https://www.toptal.com/developers/gitignore?templates-java
 
@@ -306,3 +309,4 @@ __pycache__/
 # tools/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
+>>>>>>> main
