@@ -1,0 +1,53 @@
+O termo prompt é conhecido antigo de pessoas que trabalham na área de tecnologia. O “Prompt de comando” do Windows, por exemplo, é uma interface que recebe códigos que executam funções administrativas avançadas no sistema operacional. Na área da computação, esse termo já é utilizado desde as primeiras interações de usuários com máquina por meio de texto.
+
+Mas… o que essa palavra significa?
+
+Em tradução literal do inglês, prompt significa “incitar” ou “induzir”, “fazer com que algo aconteça”, “motivar”. É um verbo que indica que algum movimento está prestes a acontecer.
+
+Quando uma interface apresenta um prompt para a pessoa usuária, é exatamente isso que está acontecendo: o programa está nos “provocando” a fazer um pedido através da linha de prompt. Quando enviamos o comando, devolvemos o incentivo, e isso inicia a interação entre a pessoa e a máquina.
+
+No contexto de modelos de linguagem e inteligência artificial, o prompt é fundamental e permite que a interação se assemelhe a uma conversa, com o uso de linguagem natural.
+
+Sendo assim, criar um bom prompt para interagir com um modelo de linguagem requer técnicas que compreendam o funcionamento dessa tecnologia, assim como na comunicação humana: é importante conhecer o público-alvo para adaptar o discurso em uma palestra, por exemplo. Da mesma forma, é importante conhecer os fundamentos de um modelo de linguagem para adaptar a comunicação e obter bons resultados.
+
+Conceito de Zero-Shot Prompting
+Esse tipo de teste é conhecido como Zero-Shot Prompting, em que enviamos a pergunta sem ensinar nada.
+
+Prompting é o ato de criar e enviar um prompt. No caso de zero shot, "zero" se refere a não fornecer exemplos ou amostras, enquanto "shot" significa exemplo ou amostra. Portanto, zero shot é uma técnica onde o prompt é dado sem exemplos prévios.
+
+
+Essas diretrizes são comprovadamente eficazes na melhora na qualidade das respostas. As principais delas são:
+
+Ter clareza ao dar as instruções;
+Dividir tarefas complexas em subtarefas menores;
+Pedir para o modelo explicar seus passos antes de dar a resposta;
+Pedir para o modelo dar justificativas de suas respostas;
+Gerar várias respostas diferentes e pedir para o modelo escolher a melhor.
+
+Introdução ao Few-Shot Prompting
+As empresas desenvolveram uma técnica mais eficaz chamada Few-Shot Prompting ("Prompting com poucos exemplos"). O termo Few-Shot se refere a fornecer poucos exemplos ou amostras. Few significa poucos ou alguns, e Shot refere-se a exemplos ou amostras.
+
+Para ilustrar essa técnica, usaremos o mesmo exemplo do Nicolas Cage. O objetivo é alinhar o modelo com o tipo de resposta desejada, fornecendo exemplos que direcionem o modelo para o caminho correto. Isso ajuda a melhorar a precisão das respostas em comparação com o zero shot prompting.
+
+O problema com o Nicolas Cage é essencialmente um problema matemático. Estamos solicitando cálculos que envolvem dividir valores sucessivamente. Modelos antigos, e até alguns modelos mais recentes, podem ter dificuldades em resolver problemas desse tipo com precisão.
+
+Para aplicar o Few-Shot Prompting, fornecemos um exemplo de um problema na mesma área de conhecimento, neste caso, matemática. Isso ajuda a direcionar o modelo e orientá-lo na direção correta, ajustando suas redes neurais para entender melhor o tipo de resposta desejada. Por exemplo:
+
+Pergunta: João tem 10 bolas. Metade delas são azuis e metade são vermelhas. Quantas bolas vermelhas o João tem?
+
+Resposta: A resposta é 5.
+
+Pergunta: Um diretor de cinema já dirigiu 16 filmes. Metade dos filmes que ele dirigiu são de ação, e metade dos filmes de ação têm a participação do Nicolas Cage, e na metade deles o Nicolas Cage tem bigode. Quantos filmes de ação com a participação do Nicolas Cage com bigode ele dirigiu?
+Copiar código
+Esse exemplo ajuda a orientar o modelo a seguir a abordagem correta. Em seguida, apresentamos a nossa pergunta real, que é a do Nicolas Cage, exatamente como vimos anteriormente. Isso ajusta o modelo para fornecer a resposta desejada com base no exemplo fornecido.
+
+Após fornecer o exemplo matemático, podemos adicionar a nossa pergunta real com a indicação "resposta:" e solicitar que o modelo a resolva.
+
+Zero-shot prompting: apenas o comando, sem nenhum exemplo;
+One-shot prompting: quando há um exemplo do comportamento esperado do modelo, além do comando;
+Few-shot prompting: quando há dois ou mais exemplos do comportamento esperado do modelo, além do comando.
+Enviar um ou mais exemplos orienta o modelo a como gerar a resposta, e é muito mais eficaz do que uma descrição detalhada do formato. Além disso, os exemplos também indicam com qual área de conhecimento estamos trabalhando, seja matemática, tradução, análise de sentimento, etc.
+
+
+
+A técnica Chain of Thought nasceu com base na few-shot prompting. Ou seja, a cadeia de pensamentos era apresentada ao modelo na resposta de cada exemplo fornecido, e, ao se basear nos exemplos, o modelo replicava a lógica necessária para solução de problemas mais simbólicos.

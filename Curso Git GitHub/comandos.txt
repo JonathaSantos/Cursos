@@ -1,0 +1,31 @@
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+
+git pull origin main
+
+git status
+
+git add .
+git commit -m “MENSAGEM”
+
+git push origin main
+
+git remote -v
+
+origin  https://github.com/meu-usuário/meu-repositório.git (fetch)
+origin  https://github.com/meu-usuário/meu-repositório.git (push)
+
+Baixar uma cópia de um repositório hospedado no GitHub para o seu computador, utilizando o comando git clone;
+
+Realizar alterações no código de um projeto e registrá-las com commits, utilizando os comandos git add e git commit;
+
+Visualizar quais arquivos foram modificados no repositório local, utilizando o comando git status;
+
+Listar os commits realizados no repositório, com dados do autor, data e mensagem de cada commit, utilizando o comando git log;
+
+Visualizar os repositórios remotos linkados com o repositório local, utilizando o comando git remote;
+
+Enviar commits feitos no repositório local para o repositório remoto, utilizando o comando git push;
+
+Baixar commits do repositório remoto para o repositório local, utilizando o comando git pull;
+
+Adicionar uma pessoa como colaboradora em um repositório no GitHub, e também como aceitar um convite de colaboração recebido.
