@@ -1,0 +1,25 @@
+version: '3.9'
+name: myappDockerAlura
+services:
+  mongodb:
+    image: mongo:4.4.6
+    container_name: meu-mongo
+    networks:
+      - compose-bridge
+    volumes:
+      - db-data:/data/db # Se quiser persistir dados do MongoDB
+  alurabooks:
+    image: aluradocker/alura-books:1.0
+    container_name: alurabooks
+    networks:
+      - compose-bridge
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongodb
+networks:
+  compose-bridge:
+    driver: bridge
+volumes:
+  db-data: # Volume definido corretamente (sem atribuição de valor)
+  meu-volume: # meu Volume
