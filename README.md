@@ -3,6 +3,15 @@
 <h2>Sobre</h2>
 <p>Os projeto utilizado nos cursos Alura.</p>
 
+# Meus Cursos e Projetos 🎓
+
+## Cursos 📚
+
+- [**Observabilidade: coletando métricas de uma aplicação com Prometheus**](https://github.com/JonathaSantos/Cursos/tree/feature/Curso_observabilidade_com_Prometheus-30-07-2025)  
+  _Branch:_ [`feature/Curso_observabilidade_com_Prometheus-30-07-2025`](https://github.com/JonathaSantos/Cursos/tree/feature/Curso_observabilidade_com_Prometheus-30-07-2025)  
+  ⏳ _Data de conclusão:_ 30/07/2025  
+  🛠️ _Tecnologias:_ Prometheus, Docker, Métricas
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## Tecnologias
@@ -32,14 +41,10 @@
 - [Licença](#licença)
 - [Conclusão](#conclusão)
 
-## Cursos:
-
-- [Observabilidade: coletando métricas de uma aplicação com Prometheus](#https://github.com/JonathaSantos/Cursos/tree/feature/Curso_observabilidade_com_Prometheus-30-07-2025)
-
 ## Como Executar ▶️
 
 ```bash
-git clone https://github.com/sJonathaSantos/Cursos.git
+git clone https://github.com/JonathaSantos/Cursos.git
 cd Cursos #seu-repositorio
 # Comandos específicos do seu projeto
 ```
