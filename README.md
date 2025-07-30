@@ -50,3 +50,23 @@ git clone https://github.com/JonathaSantos/Cursos.git
 cd Cursos #seu-repositorio
 # Comandos específicos do seu projeto
 ```
+
+### Tipos comuns:
+
+- feat: nova funcionalidade
+
+- fix: correção de bug
+
+- docs: documentação
+
+- style: formatação (sem impacto em código)
+
+- refactor: refatoração (sem alterar comportamento)
+
+- perf: melhoria de performance
+
+- test: testes
+
+- chore: tarefas diversas (build, dependências, configs)
+
+- ci: pipeline/CI
